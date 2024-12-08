@@ -39,10 +39,6 @@ All of the required packages are installed in the beginning of the notebook. The
 
 Run the entire file until reaching the **Front End** section. Running the cell to begin the Flask application will produce an `ngrok` URL that is accessible from any browser. Once the app has been started, feel free to experiment with any sample questions or browse the full dataset of policy documents in the "View PDFs" tab!
 
-#### Web app demo
-
-<video src="./unicc_final_demo.mp4" controls></video>
-
 ### Contributing
 
 ### License
