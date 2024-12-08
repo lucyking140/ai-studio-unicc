@@ -11,6 +11,10 @@ This project aims to develop an **AI-driven BOT platform** powered by **Large La
 
 in efficiently querying and extracting relevant knowledge and insights from the extensive **UNECE PDF documentation and library**.  
 
+The platform:  
+- **Empowers policymakers and researchers** to quickly access and analyze large amounts of critical information.  
+- **Aligns with SDG 13: Climate Action**, supporting efforts to combat climate change through better-informed decision-making.  
+
 ### Table of Contents
 
 - [Installation & Setup](#installation-and-setup)
