@@ -4,6 +4,13 @@
 
 [note: might be helpful to include link to and description of sample dataset? - lucy]
 
+This project aims to develop an **AI-driven BOT platform** powered by **Large Language Models (LLMs)**. The platform is designed to assist:  
+- **Policymakers**  
+- **Research Students**  
+- **Other Stakeholders**  
+
+in efficiently querying and extracting relevant knowledge and insights from the extensive **UNECE PDF documentation and library**.  
+
 ### Table of Contents
 
 - [Installation & Setup](#installation-and-setup)
