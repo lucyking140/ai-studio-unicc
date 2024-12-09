@@ -59,3 +59,10 @@ Create a pull request to contribute to this project!
 
 
 ### Acknowledgments
+
+We would like to thank the following people who made this project possible:
+
+   - The UNICC student team: Aleena Sultan, Alexa Celis, Aniya Smith, Chinmayi Ranade, Chloe Nam, Hailey Manuel, Journei Ferguson, Kim Hernandez, Lucy King, Sadia Sharmin, Sara Wang
+   - UNICC Challenge Advisors: Cosimo D'Oria, Devyani Rastogi, Diana Haj, Jason Jin, James Vence, Shambhavi Mohan, Tourad Baba
+   - Break Through Tech AI Studio TA: Dev Ashar
+   - Break Through Tech Program
