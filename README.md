@@ -54,7 +54,13 @@ Run the entire file until reaching the **Front End** section. Running the cell t
 
 Create a pull request to contribute to this project!
 
-### License
+### License  
+
+This project is licensed under the **Apache License 2.0**, a permissive open-source license that:  
+- Allows commercial use, modification, distribution, and private use.  
+- Requires preservation of copyright and license notices.  
+
+📄 **[Read the Full License](LICENSE)**
 
 
 
