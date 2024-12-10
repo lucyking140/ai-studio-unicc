@@ -2,18 +2,18 @@
 
 ### Project Description
 
-[note: might be helpful to include link to and description of sample dataset? - lucy]
+This project aims to develop an **AI-driven BOT platform** powered by **Large Language Models (LLMs)**. The platform is designed to assist:
 
-This project aims to develop an **AI-driven BOT platform** powered by **Large Language Models (LLMs)**. The platform is designed to assist:  
-- **Policymakers**  
-- **Research Students**  
-- **Other Stakeholders**  
+- **Policymakers**
+- **Research Students**
+- **Other Stakeholders**
 
-in efficiently querying and extracting relevant knowledge and insights from the extensive **UNECE PDF documentation and library**.  
+in efficiently querying and extracting relevant knowledge and insights from the extensive [**UNECE PDF documentation and library**](./documents_readme.md).
 
-The platform:  
-- **Empowers policymakers and researchers** to quickly access and analyze large amounts of critical information.  
-- **Aligns with SDG 13: Climate Action**, supporting efforts to combat climate change through better-informed decision-making.  
+The platform:
+
+- **Empowers policymakers and researchers** to quickly access and analyze large amounts of critical information.
+- **Aligns with SDG 13: Climate Action**, supporting efforts to combat climate change through better-informed decision-making.
 
 ### Table of Contents
 
@@ -26,12 +26,13 @@ The platform:
 
 ### Installation and Setup
 
-All of the required packages are installed in the beginning of the notebook. The same packages are also included in requirements.txt (install by running `pip install -r requirements.txt`) to install all at once.
+Ensure you have installed Python 3.10+. Otherwise, all of the required packages are installed in the notebook itself. We prepared the model to run on Google Colab's T4 GPU, so if running locally ensure you have access to a similar amount of memory.
 
-#### Prerequisites:
+The model notebook links to a user's Google Drive to identify the PDF database from which to process text for fine-tuning and RAG. To access this database, please download the [Sample Database](./Sample Dataset) folder or save PDFs from the [list of UNECE sources](./documents_readme.md), then change the `folder_path` in the **Setup** section of the notebook to the location of your dataset.
 
-- `Python 3.10` or compatible versions
-- Sufficient GPU memory (we trained on Colab's free-tier T4 GPU)
+To access the Llama 3.1 model via Hugging Face, please [request access](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct) through your Hugging Face account and add your HF token as a Colab Secret. The document also currently uses pre-generated authtokens for `ngrok` and Weights and Biases in the **Setup** section of the notebook. If you have your own accounts on those platforms, please replace those with your own tokens.
+
+If you need to run the frontend demo, you'll need to configure the [Google Drive API](https://developers.google.com/drive/api/guides/search-files#python) for file search to give Colab access to URLs based on filenames (this is what supports access to relevant documents as a user submits queries). Then, you'll need to upload your resulting `service_account.json` file to the Colab before running the server.
 
 ### Model Implementation
 
@@ -48,7 +49,7 @@ All of the required packages are installed in the beginning of the notebook. The
 
 ### Usage
 
-Run the entire file until reaching the **Front End** section. Running the cell to begin the Flask application will produce an `ngrok` URL that is accessible from any browser. Once the app has been started, feel free to experiment with any sample questions or browse the full dataset of policy documents in the "View PDFs" tab!
+Run the entire file until reaching the **Inference** section. At this point, your model is trained, fine-tuned, and ready for inference! You can send queries directly at this point in the file, or continue on to the **Front End** section where you'll be able to load a Flask demo web app for further testing. Running the cell to begin the Flask application will produce an `ngrok` URL that is accessible from any browser. Once the app has been started, feel free to experiment with any sample questions or browse the full dataset of policy documents in the "View PDFs" tab!
 
 ### Contributing
 
@@ -61,7 +62,6 @@ This project is licensed under the **Apache License 2.0**, a permissive open-sou
 - Requires preservation of copyright and license notices.  
 
 📄 **[Read the Full License](LICENSE)**
-
 
 
 ### Acknowledgments
